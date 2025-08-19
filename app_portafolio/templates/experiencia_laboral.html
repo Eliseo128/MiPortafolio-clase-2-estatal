@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-2">
+
+    {% for exp in experiencia %}
+        <div class="jumbtron jumbtron-fluid mt-2">
+            <h1 class="display4"> {{exp.preparatoria}} </h1>
+            <p class="lead"> {{exp.carrera}}</p>
+            <p class="lead"> {{exp.fecha_inicio}} - {{exp.fecha_fin}}</p>
+        </div>
+    {% endfor %}
+
+
+</div>
+
+{% endblock content1 %}

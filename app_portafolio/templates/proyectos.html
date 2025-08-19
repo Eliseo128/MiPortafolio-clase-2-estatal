@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="row my-2">
+    {% for proyecto in proyectos %}
+<div class="col-6">
+    <h4 class="text-light"> {{proyecto.titulo}}   </h4>
+    <img src="{% static proyecto.ruta_imgen %}" width="500" height="800" class="img-fluid">
+
+</div>
+{% endfor %}
+</div>
+
+{% endblock content1 %}
